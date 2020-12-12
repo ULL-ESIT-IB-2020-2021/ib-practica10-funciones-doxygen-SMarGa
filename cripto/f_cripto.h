@@ -16,9 +16,11 @@
 #ifndef _f_cripto
 #define _f_cripto
 #include "cifra_cesa.cc"
+#include "cifra_xor.cc"
 
 void CifraCesa(std::string nombre_del_arcivo, int contrasena);
 void DesCesa(std::string nombre_del_arcivo, int contrasena);
+void CifraXor(std::string nombre_del_arcivo, std::string contrasena,std::string nombre_del_arcivo_salida);
 
 
 #endif

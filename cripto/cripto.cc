@@ -35,6 +35,12 @@ int main ( int argc, char* argv[]) {
   std::string outname = argv[2];
   int cifrado = atoi(argv[3]);
   std::string modo = argv[5];
+  if(cifrado==1){
+  std::string contrasena=(argv[4]);
+    if(modo =="+" ||modo =="-"){
+      CifraXor(name,contrasena,outname);
+    }
+  }
   if(cifrado==2){
   int contrasena = atoi(argv[4]);
     if(modo =="+"){
